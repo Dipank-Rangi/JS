@@ -31,6 +31,30 @@ let someNum = true
 
 let stringNum = String(someNum)
 
-console.log(typeof(stringNum));
-console.log(stringNum);
+// console.log(typeof(stringNum));
+// console.log(stringNum);
+
+// *********** Operations ************
+
+let value = 3
+let negValue = - value
+//console.log(negValue);
+
+//console.log(2**3); // a**b -> a ki pow b
+
+let str1 = "hello"
+let str2 = " Deep"
+let str3 = str1 + str2 // we can add two strings 
+
+// console.log("1"+2+2);  first so string
+// console.log(1+2+"2"); first number so treat is as a number
+
+let gameCounter = 100
+
+console.log(gameCounter++);
+console.log(gameCounter);
+
+
+
+
 

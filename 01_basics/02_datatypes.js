@@ -25,7 +25,8 @@ let state;
 
 console.log(typeof(12)); // to find 
 console.log(typeof(name)); // inside is variable name 
-console.log(typeof undefined);
+console.log(typeof undefined); // undefined 
+console.log(typeof null) // object
 
 
 
