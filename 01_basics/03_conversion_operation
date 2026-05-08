@@ -1,0 +1,36 @@
+//let score = "33abc" NaN->Not A NUMBER
+//let score = null
+//let score = undefined
+let score = false
+
+// console.log(typeof score);
+let valueInNumber = Number(score)
+// console.log(typeof valueInNumber );
+// console.log( valueInNumber );
+
+
+// "33" -> 33
+// "32ab" -> NaN
+// null -> NaN
+// true -> 1
+
+
+let loggedIn = ""
+
+let bool = Boolean(loggedIn)
+// console.log(typeof(loggedIn));
+// console.log(typeof(bool));
+// console.log(bool)
+
+// 1-> true
+// 0-> false
+// "" -> false
+//"DEp" -> true
+
+let someNum = true
+
+let stringNum = String(someNum)
+
+console.log(typeof(stringNum));
+console.log(stringNum);
+
