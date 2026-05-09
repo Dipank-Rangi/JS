@@ -1,4 +1,4 @@
-// data ko kis trh memory main rakha jata hai or access kra jata hai us hisab se datat ko baata gya hai 2 typs hai
+// data ko kis trh memory main rakha jata hai or access kra jata hai us hisab se data ko baata gya hai 2 typs hai
 // Primitive -> call by value 
 
 // 7 types : String , Number ,Boolean , null , undefined , Symbol , BigInt
@@ -7,7 +7,7 @@
 
 // Array , object , functions
 // typeof return object for array and object && gives function for function 
-// js -> dynamically typed language becoz we dont have to declare the type of variable lke in c or c++
+// js -> dynamically typed language becoz we dont have to declare the type of variable like in c or c++
 
 // Symbol 
 
@@ -21,6 +21,7 @@ console.log(id === anotherId); // ->false because the use of Symbol is to make t
 // Array 
 
 const heros = ["deep" , " DIPANK"]
+console.log(heros); // print the whole array
 
 // objects
 
@@ -28,6 +29,7 @@ let myObj = {
     name:"DIPANK",
     age : 20,
 }
+console.log(myObj);
 
 // function 
 
@@ -35,5 +37,8 @@ const myFun = function(){
     console.log("HELLO WORLD");
     
 }
+
+console.log(myFun());
+
 
 console.log(typeof id);
