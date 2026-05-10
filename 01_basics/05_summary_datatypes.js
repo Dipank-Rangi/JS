@@ -42,3 +42,22 @@ console.log(myFun());
 
 
 console.log(typeof id);
+
+
+
+// Memory -> 2types
+// stack(Primitive datatypes)-> give u a copy  and heap(Non primitive)-> give u a reference  memory
+
+let user1 = {
+    emailId:"user@gmail.com",
+    upiId:"user@1234",
+}
+
+let user2 = user1
+
+user2.emailId = "dnk@gmail.com"
+
+console.log(user1.emailId);
+console.log(user2.emailId);
+
+
