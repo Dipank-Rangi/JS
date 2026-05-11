@@ -1,3 +1,5 @@
+// falsy values -> false condition , null , 0 , "" , false , NaN , undefined
+
 //let score = "33abc" NaN->Not A NUMBER
 //let score = null
 //let score = undefined

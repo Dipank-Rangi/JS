@@ -5,10 +5,30 @@ n = arr.length;
     
 // }
 arr.push(9); // add in the last
-console.log(arr);
+//console.log(arr);
 arr.pop(); // remove from the last 
 arr.unshift(13);// add at first 
 arr.shift(); // removes the starting element
-console.log(arr);
+//console.log(arr);
 
 
+a = [5,6];
+for(let i =0 ; i<a.length ; i++){
+
+   // console.log(i , a[importScripts]);   
+}
+
+// ForOf Loop********************
+// we cant update values using this loop because it takes copy of that ele form that array 
+for (const ele of a) {
+    //console.log(ele);
+    
+}
+
+// ForEach Loop **************___>>>>
+// we cant update values using this loop because it takes copy of that ele form that array 
+
+a.forEach((ele , i) => {
+    //console.log(ele,i);
+    
+});
