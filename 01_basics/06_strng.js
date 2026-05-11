@@ -8,4 +8,15 @@ console.log(`Hello my name is ${name} and my repocount is ${repoCount}`); // use
 const stringName = new String ("DIPANK_RANGI") // another way to declare the string  hee it is a object
 //console.log(typeof(stringName)); -> object
 
-console.log(stringName[1]); // string same as in c++
+// console.log(stringName[1]); // string same as in c++
+// console.log(stringName.__proto__);
+
+
+// console.log(stringName.toLowerCase());// it will not change the original string
+// console.log(stringName.charAt(0));
+// console.log(stringName.indexOf('a'));
+
+const newString = stringName.substring(0,6); // end index is not included 
+console.log(newString);
+
+
