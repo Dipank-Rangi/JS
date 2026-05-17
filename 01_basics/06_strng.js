@@ -37,19 +37,30 @@ let newString2 = newString.toUpperCase(); // ab jo ye newstring. h ye purani str
 //console.log(newString2); 
 
 let s = "    DIPANK RANGI   " // it will remove starting and ending spaces but it will not remove the in between spaces
-console.log(s.trim());
+//console.log(s.trim());
 let s1 = s.trim();
 //console.log(s1.lastIndexOf('A')); // print the index of last occurrrences of that character
 
 // slice is same as of substring
-console.log(s1.slice(3,4));// it will also not not 2nd  index
+//console.log(s1.slice(3,4));// it will also not not 2nd  index
 
 // split -> to convert a string into array of stirng for better understanding check the given below example
 let s3 = "Dipank is a good boy"
 
 let arr = s3.split(' '); //ander vo chij daalo jis basis pe aap unko alg alg krna chahte ho like space any character or anything u want to 
-console.log(arr);
+//console.log(arr);
 
 
+let name1 = "DIPANK_RANgI"
+
+//console.log(name1.replace('DIP' , 'AAA')); // it will replace DIP->AAA
+
+//console.log(name1);
+
+console.log(name1.includes("DoP")); // includes check that hte given string have that string or not 
+
+// let arr1 = name1.split('A')
+
+// console.log(arr1);
 
 
