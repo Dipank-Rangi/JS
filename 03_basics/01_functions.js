@@ -45,7 +45,45 @@ function loginUserMessage(username = "SAM"){ // agr humne kuch bhi pass nhi kiya
 
 // agar hum kuch bhi pass nhi kre gye toh uski jgh undefined likha hua aaye gya na ki null
 
- console.log(loginUserMessage());
+ //console.log(loginUserMessage());
 
+
+// situation -> we dont know how many parameters will be given to any function
+// 3 dot ... -> yahi rest or spread operator 
+function calculatecartPrice(...num1  ){ // an ye jitne argument hum pass kre gye sab ko return kr dega
+    return  num1
+}
+// it will return as array
+
+// console.log(calculatecartPrice(20,30,40));
+
+
+// how to pass an object in a function
+const user ={
+    username:"DIPANK",
+    price:2323
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}.`);
+    
+}
+
+// we can direct pass the value or passing by storing it in array
+//handleObject(user)
+
+// handleObject({
+//     username:"SAM",
+//     price:249
+// })
+
+let myArr =[200,200,121]
+
+function returnValue(myArr){
+    return myArr[2];
+}
+//console.log(returnValue(myArr));
+
+console.log(returnValue([2,3,4,5]));
 
 
