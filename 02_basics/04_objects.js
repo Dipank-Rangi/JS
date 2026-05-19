@@ -42,9 +42,24 @@ let arr=[
 // ****************************************
 // object ki sari keys chaia 
 
-console.log(Object.keys(user1));// return type is array
-console.log(Object.values(user1));// array hi return hi kre gya
-console.log(Object.entries(user1));// return array of array of key with its value
+//console.log(Object.keys(user1));// return type is array
+//console.log(Object.values(user1));// array hi return hi kre gya
+//console.log(Object.entries(user1));// return array of array of key with its value
 
 console.log(user1.hasOwnProperty("name1"));
 
+// destruct of objects
+const course={
+    courseName:"JSHindi",
+    price:"999",
+    courseInstructor:"DIPANK"
+
+}
+
+// it is okay console.log(course.courseName);
+// but many people use this new one
+
+const {courseInstructor:instructor}   = course // phli k chaia or = k baad kis main se chaia
+console.log(instructor);
+
+// jb hum api ko call krte hain toh hume data ya toh object ke format main milta hain ya to array ke format main
