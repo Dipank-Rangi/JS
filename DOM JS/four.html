@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | DIPANK</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul class="lang">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+    <script>
+        function addLang(langName){
+            const li = document.createElement('li');
+            li.innerHTML = `${langName}`
+            document.querySelector('.lang').appendChild(li);
+        }
+
+        addLang('C++');
+        addLang('Python');
+
+
+
+        function addOptLang(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.lang').appendChild(li);
+
+
+        }
+
+        addOptLang('typeScript')
+
+        // Edit
+
+        const secLang = document.querySelector('li:nth-child(2)')
+        //secLang.innerHTML = "Mojo"
+
+        const newLi = document.createElement('li')
+        newLi.textContent = 'MOJO'
+        secLang.replaceWith(newLi)
+
+        // Edit
+        const firstLang = document.querySelector('li:nth-child(1)')
+    //    const newli = document.createElement('li');
+    //     newli.textContent = "React JS"
+    //     firstLang.replaceWith(newli)
+        firstLang.outerHTML = "<button> React JS </button>"
+
+        
+        // Remove 
+
+        const lastLang = document.querySelector('li:last-child');
+        lastLang.remove();
+        
+
+    </script>
+</html>

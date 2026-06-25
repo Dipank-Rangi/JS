@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | DIPANK</title>
+
+    <style>
+         body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+
+    <script>
+        const container = document.createElement('h1');
+        console.log(container);
+        container.className='main';
+        // container.id = Math.round(Math.random()*10+1);
+        container.setAttribute("id" ,"myId")
+
+
+        // container.innerText = "DIPANK RANGI"-> this will do overWrite
+        const heading = document.createTextNode("DIPANK RANGI");
+        container.appendChild(heading)
+
+        document.body.appendChild(container)
+        
+    </script>
+</html>
