@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS in JS</title>
+    <style>
+
+        body{
+            background-color: rgb(21, 19, 19);
+        }
+        h2{
+            color: white;
+            margin-left: 4%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+    <script>
+         // attachEvent()
+        // jQuery - on
+
+        // const owl = document.querySelector('#owl')
+        // owl.onclick = function(){
+        //     alert("OWL")
+        // } -> features kam provide krta h islia isse use nhi kre gye
+        console.log("vhghbh");
+        
+        document.querySelector('#owl').addEventListener('click' , function(e){
+            
+            console.log(e);
+            
+        },false) // there is a third variable that is default false but in many interviews it is very useful without this u cant solve that problem
+
+        // type , timestamp , defaultPrevented
+        // target , toElement , srcElement , currentTarget
+
+        // -> false/true is event propagation mostly we use false
+        document.querySelector('#images').addEventListener('click' , function(e){
+            
+           //alert("CLICKED INNSIDE THE Url");
+            
+        },false)
+
+        document.querySelector('#owl').addEventListener('click' , function(e){
+            
+    //        console.log("FIRST");
+    // console.log(e);
+  //  alert("owl clicked");
+            
+        },false)
+
+        // false mtlb phle owlclicked hua phir inside url wala bubble ho ki upar aaja gya 
+        // true-> phle inside url waala phir owl waala
+
+
+
+
+
+      document.querySelector("#images").addEventListener('click',function(e){
+        //console.dir(e.target.parentNode)
+        if(e.target.tagName === 'IMG'){
+             let removeIt = e.target.parentNode;
+        removeIt.remove();
+        //removeIt.parentNode.removeChild(removeIt)
+        }
+       
+
+
+      },false)
+    </script>
+</html>

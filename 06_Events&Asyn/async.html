@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Js</title>
+</head>
+<body>
+    <h1>Async</h1>
+    <button id="stop">Stop</button>
+</body>
+    <script>
+        console.log("NAMRTA");
+        
+        // setTimeout(function(){
+        //     console.dir("DIPANK");
+            
+        // } , 1000);
+
+        const setMe = function(){
+            console.dir("RITU");
+            
+        }
+        const interval = setInterval(setMe,2000);
+        const chngeText = function(){
+            document.querySelector('h1').innerHTML = "Bext JS Series"
+        }
+
+        const chngeMe = setTimeout(chngeText , 2000);
+
+        document.querySelector("#stop").addEventListener('click',function(){
+            clearTimeout(chngeMe);
+            clearInterval(interval);
+            console.dir("STOPPED");
+        })
+       
+    </script>
+</html>
