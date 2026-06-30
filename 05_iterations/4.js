@@ -1,8 +1,13 @@
 const coding = ["C++","C","PY","JAVA","JS"]
 
 const values = coding.forEach((item)=>{
-   // console.log(item);
+   //console.log(item);
     return item;
+    
+})
+
+coding.forEach((item,index,arr)=>{
+   // console.log(item,index,arr);
     
 })
 
@@ -25,4 +30,34 @@ arr.forEach((item)=>{
         newarr.push(item);
     }
 })
-console.log(newarr);
+//console.log(newarr);
+
+const myCoding = [
+    {
+        language : 'Js',
+        languageFileName :'.js',
+    },
+
+    {
+        language : 'Pyhton',
+        languageFileName :'.py',
+    },
+
+    {
+        language : 'c++',
+        languageFileName :'.cpp',
+    },
+
+    {
+        language : 'C',
+        languageFileName :'.c',
+    },
+]
+
+myCoding.forEach((item)=>{
+    for (const key  in item) {
+        console.log(`${key}->${item[key]}`);
+    }
+})
+
+

@@ -20,7 +20,7 @@ const map = new Map()
 map.set('IN' , "INDIA")
 map.set("PAK","PAKISTAN")
 map.set("PAK","PAKISTAN")
-//console.log(map);
+ //console.log(map);
 
 for (const [key , value] of map) {
     // console.log(key);
@@ -36,6 +36,14 @@ const myObj = {
 
 }
 
-for (const [key,value] of myObj) {
-    console.log(key);
-}
+// for (const [key,value] of myObj) {
+//     console.log(key);
+// }
+
+// for (const key in myObj) {
+//    console.log(myObj[key]);
+
+   
+    
+    
+// }

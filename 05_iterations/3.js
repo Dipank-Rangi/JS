@@ -17,7 +17,9 @@ for (const key in myObj) {
 let arr=[1,2,3,4]
 
 for (const ele in arr) {
-    //console.log(arr[ele]);
+    console.log(ele);
+    
+    // console.log(arr[ele]);
     
 }
 
